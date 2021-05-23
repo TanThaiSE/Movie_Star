@@ -90,7 +90,7 @@ header ul li:hover::after{
     border-radius: 40px;
     padding: 11px 31px;
     position: relative;
-    overflow: hidden; /*cắt phần dư */
+    overflow: hidden;   /* cắt phần dư */
 }
 .carousel-item .btnTrailer::after{
     content: "";
@@ -151,6 +151,71 @@ header ul li:hover::after{
     bottom: 0;
     
 }
+
+
+.newin .newin__readmore{
+    position: relative;
+}
+.newin .newin__readmore img{
+    width: 100%;
+    border-radius: 5%;
+} 
+.newin .newin__readmore__content{
+    position: absolute;
+    color: white;
+    top: 0;
+    width:100%;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+    text-align: center;
+    z-index: 9;
+}
+
+.newin .newin__readmore__content a i{
+    color: white ;
+    padding: 19px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-top: 114px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+}
+.newin .newin__readmore__content__text{
+    margin-top: 31px;
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+}
+.newin .newin__readmore__content::after{
+    content: '';
+    display: block;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    border-radius: 5%;
+    left: -50%;
+    bottom: 0;
+    transform: skewX(30deg);
+    transition: all 0.5s;
+    
+}
+
+.newin .newin__readmore:hover .newin__readmore__content::after{
+    width: 200%;
+}
+
+.newin .newin__readmore:hover .newin__readmore__content a i{
+    opacity: 1;
+}
+.newin .newin__readmore:hover .newin__readmore__content__text {
+    opacity: 1;
+}
+
 .newin h3{
     font-size: 18px;
 }
