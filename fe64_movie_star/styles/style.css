@@ -330,6 +330,8 @@ header ul li:hover::after{
     padding: 4px;
 }
 
+
+
 /* comming soon */
 .comingsoon{
     /* background: red; */
@@ -345,11 +347,36 @@ header ul li:hover::after{
     top: 0;
     left: 0;
 }
+.comingsoon .content__left{
+    position: relative;
+    z-index: 2;
+}
+.comingsoon .content__right{
+    position: relative;
+    z-index: 2;
+}
+.comingsoon .content__right a i{
+    position: absolute;
 
+    text-align: center;
+    margin-top: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 19px;
+    border: solid 1px #ec7532;
+    border-radius: 73%;
+    margin: 0 auto;
+    left: 50%;
+}
 .slick-slide{
     padding: 5px;
     
 }
+
+
+
+
 
 /* Contact */
 .contact .title{
